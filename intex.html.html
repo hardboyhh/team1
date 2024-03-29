@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DASHBOARD</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+  }
+
+  .sidebar h1 {
+    margin-bottom: 20px;
+  }
+
+  .sidebar img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar .university-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .sidebar #wpublocks {
+    font-size: 24px;
+    margin-bottom: 20px; /* Added margin-bottom */
+  }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-image: url("wp8107405-anime-university-wallpapers.jpg"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    position: relative; /* Added */
+  }
+
+  .university-info {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative; /* Ensure relative positioning for absolute elements */
+  }
+
+  .button {
+    background-color: #ff0000; /* Red color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Add cursor pointer for hover effect */
+  }
+
+  .small-picture {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure small pictures are above background */
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+    <h1>Dashboard</h1>
+    <img src="2.jpg" alt="University Logo">
+    <div class="university-name">MONSTER</div>
+    <div id="wpublocks"><span style="color: #f00;">M</span>U TOUCH</div>
+    <a href="#" class="button" onclick="showPopup('Student Information Management')">Student Information Management</a>
+    <a href="#" class="button" onclick="showPopup('Admissions and Enrollment Management')">Admissions and Enrollment Management</a>
+    <a href="#" class="button" onclick="showPopup('Academic Program Management')">Academic Program Management</a>
+    <a href="#" class="button" onclick="showPopup('Classroom and Schedule Management')">Classroom and Schedule Management</a>
+    <a href="#" class="button" onclick="showPopup('Staff Management')">Staff Management</a>
+    <a href="#" class="button" onclick="showPopup('Fee Management')">Fee Management</a>
+    <a href="#" class="button" onclick="showPopup('Communication and Collaboration Tools')">Communication and Collaboration Tools</a>
+    <a href="#" class="button" onclick="showPopup('Library Management')">Library Management</a>
+  </div>
+  <div class="content">
+    <div class="university-info">
+      <img src="Preview.jpg" alt="Your Logo">
+      <p>MONSTER UNIVERSITY IS A PRESTIGIOUS INSTITUTION DEDICATED TO EXCELLENCE IN EDUCATION...</p>
+   
+  </div>
+</div>
+
+<script>
+  function showPopup(text) {
+    alert(text); // Show popup with button name as heading
+  }
+</script>
+
+</body>
+</html>
